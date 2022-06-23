@@ -33,6 +33,7 @@ Partial Class Form1
         Me.btn_num_zero = New System.Windows.Forms.Button()
         Me.btn_negative = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1 = New System.Windows.Forms.TableLayoutPanel()
+        Me.btn_check = New System.Windows.Forms.Button()
         Me.btn_num_seven = New System.Windows.Forms.Button()
         Me.btn_num_eight = New System.Windows.Forms.Button()
         Me.btn_num_nine = New System.Windows.Forms.Button()
@@ -43,14 +44,13 @@ Partial Class Form1
         Me.btn_num_four = New System.Windows.Forms.Button()
         Me.btn_num_one = New System.Windows.Forms.Button()
         Me.btn_inverse = New System.Windows.Forms.Button()
-        Me.btn_num_two = New System.Windows.Forms.Button()
         Me.btn_sqr = New System.Windows.Forms.Button()
         Me.btn_num_three = New System.Windows.Forms.Button()
         Me.btn_multiply = New System.Windows.Forms.Button()
         Me.btn_divide = New System.Windows.Forms.Button()
         Me.btn_sqrt = New System.Windows.Forms.Button()
+        Me.btn_num_two = New System.Windows.Forms.Button()
         Me.TableLayoutPanel3 = New System.Windows.Forms.TableLayoutPanel()
-        Me.btn_check = New System.Windows.Forms.Button()
         Me.TableLayoutPanel1.SuspendLayout()
         Me.TableLayoutPanel3.SuspendLayout()
         Me.SuspendLayout()
@@ -223,6 +223,19 @@ Partial Class Form1
         Me.TableLayoutPanel1.Size = New System.Drawing.Size(398, 366)
         Me.TableLayoutPanel1.TabIndex = 82
         '
+        'btn_check
+        '
+        Me.btn_check.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_check.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
+        Me.btn_check.Location = New System.Drawing.Point(201, 3)
+        Me.btn_check.Name = "btn_check"
+        Me.btn_check.Size = New System.Drawing.Size(93, 54)
+        Me.btn_check.TabIndex = 85
+        Me.btn_check.Text = "check"
+        Me.btn_check.UseVisualStyleBackColor = True
+        '
         'btn_num_seven
         '
         Me.btn_num_seven.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -353,19 +366,6 @@ Partial Class Form1
         Me.btn_inverse.Text = "⅟x"
         Me.btn_inverse.UseVisualStyleBackColor = True
         '
-        'btn_num_two
-        '
-        Me.btn_num_two.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btn_num_two.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
-        Me.btn_num_two.Location = New System.Drawing.Point(102, 124)
-        Me.btn_num_two.Name = "btn_num_two"
-        Me.btn_num_two.Size = New System.Drawing.Size(93, 55)
-        Me.btn_num_two.TabIndex = 70
-        Me.btn_num_two.Text = "2"
-        Me.btn_num_two.UseVisualStyleBackColor = True
-        '
         'btn_sqr
         '
         Me.btn_sqr.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
@@ -431,6 +431,19 @@ Partial Class Form1
         Me.btn_sqrt.Text = "√x"
         Me.btn_sqrt.UseVisualStyleBackColor = True
         '
+        'btn_num_two
+        '
+        Me.btn_num_two.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
+            Or System.Windows.Forms.AnchorStyles.Left) _
+            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.btn_num_two.Font = New System.Drawing.Font("Segoe UI Semibold", 14.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point)
+        Me.btn_num_two.Location = New System.Drawing.Point(102, 124)
+        Me.btn_num_two.Name = "btn_num_two"
+        Me.btn_num_two.Size = New System.Drawing.Size(93, 55)
+        Me.btn_num_two.TabIndex = 70
+        Me.btn_num_two.Text = "2"
+        Me.btn_num_two.UseVisualStyleBackColor = True
+        '
         'TableLayoutPanel3
         '
         Me.TableLayoutPanel3.Anchor = CType(((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Left) _
@@ -447,19 +460,6 @@ Partial Class Form1
         Me.TableLayoutPanel3.Size = New System.Drawing.Size(398, 127)
         Me.TableLayoutPanel3.TabIndex = 84
         '
-        'btn_check
-        '
-        Me.btn_check.Anchor = CType((((System.Windows.Forms.AnchorStyles.Top Or System.Windows.Forms.AnchorStyles.Bottom) _
-            Or System.Windows.Forms.AnchorStyles.Left) _
-            Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.btn_check.Font = New System.Drawing.Font("Segoe UI", 10.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point)
-        Me.btn_check.Location = New System.Drawing.Point(201, 3)
-        Me.btn_check.Name = "btn_check"
-        Me.btn_check.Size = New System.Drawing.Size(93, 54)
-        Me.btn_check.TabIndex = 85
-        Me.btn_check.Text = "check"
-        Me.btn_check.UseVisualStyleBackColor = True
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(10.0!, 25.0!)
@@ -468,9 +468,6 @@ Partial Class Form1
         Me.Controls.Add(Me.TableLayoutPanel3)
         Me.Controls.Add(Me.TableLayoutPanel1)
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
-        Me.MaximizeBox = False
-        Me.MaximumSize = New System.Drawing.Size(1920, 1080)
-        Me.MinimizeBox = False
         Me.MinimumSize = New System.Drawing.Size(444, 650)
         Me.Name = "Form1"
         Me.Opacity = 0.95R
